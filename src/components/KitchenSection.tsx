@@ -1,15 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function KitchenSection() {
   return (
     <section className="relative min-h-[600px] lg:min-h-[700px]">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(https://ext.same-assets.com/3334648824/417933128.png)`,
-        }}
-      >
+      <div className="absolute inset-0">
+        <Image
+          src="https://ext.same-assets.com/3334648824/417933128.png"
+          alt="Modern kitchen interior"
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/30" />
       </div>
 

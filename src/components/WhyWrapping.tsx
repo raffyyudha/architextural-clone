@@ -32,8 +32,8 @@ export default function WhyWrapping() {
                 className="object-cover"
               />
               {/* Decorative squares overlay */}
-              <div className="absolute top-8 left-8 w-16 h-16 border border-white/30" />
-              <div className="absolute bottom-8 right-8 w-16 h-16 border border-white/30" />
+              <div className="absolute top-8 left-8 w-20 h-20 border-2 border-white/40" />
+              <div className="absolute bottom-8 right-8 w-20 h-20 border-2 border-white/40" />
             </div>
           </div>
         </div>

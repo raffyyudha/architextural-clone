@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center">
             <svg
-              className="w-12 h-12 text-white"
+              className="w-14 h-14 text-white"
               viewBox="0 0 40 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -52,12 +52,12 @@ export default function Footer() {
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
               href="https://www.instagram.com/_Architextural"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+              className="w-11 h-11 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
             >
               <Instagram size={20} />
             </a>
@@ -65,7 +65,7 @@ export default function Footer() {
               href="https://www.x.com/_Architextural"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+              className="w-11 h-11 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -75,7 +75,7 @@ export default function Footer() {
               href="https://www.facebook.com/WilliamSmith1832"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+              className="w-11 h-11 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
             >
               <Facebook size={20} />
             </a>
@@ -83,7 +83,7 @@ export default function Footer() {
               href="http://www.youtube.com/williamsmith1832"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+              className="w-11 h-11 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
             >
               <Youtube size={20} />
             </a>
@@ -91,7 +91,7 @@ export default function Footer() {
               href="https://www.linkedin.com/showcase/architextural/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+              className="w-11 h-11 border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
             >
               <Linkedin size={20} />
             </a>
@@ -100,41 +100,39 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-white py-4">
+      <div className="bg-white py-5">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-600">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-6 text-sm text-gray-600">
               <span>Copyright © Architextural 2026. All Rights Reserved.</span>
-              <div className="flex items-center gap-4">
-                <Link href="/privacy-policy" className="hover:text-[#100f0f] transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="/terms-conditions" className="hover:text-[#100f0f] transition-colors">
-                  Terms & Conditions
-                </Link>
-                <span>
-                  Website by{" "}
-                  <a
-                    href="https://landdigital.agency"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-[#100f0f]"
-                  >
-                    land.digital
-                  </a>
-                </span>
-              </div>
+              <Link href="/privacy-policy" className="hover:text-[#100f0f] transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-conditions" className="hover:text-[#100f0f] transition-colors">
+                Terms & Conditions
+              </Link>
+              <span>
+                Website by{" "}
+                <a
+                  href="https://landdigital.agency"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#100f0f]"
+                >
+                  land.digital
+                </a>
+              </span>
             </div>
 
             {/* William Smith Group Logo */}
             <div className="flex items-center gap-3">
               <span className="text-xs text-gray-500 uppercase tracking-wider">Part of</span>
               <span className="text-sm font-bold text-[#100f0f] tracking-wide">WILLIAM SMITH GROUP 1832</span>
-              <div className="flex">
+              <div className="flex ml-1">
                 {[...Array(4)].map((_, i) => (
                   <div
                     key={i}
-                    className="w-2 h-6 bg-[#100f0f] transform -skew-x-12 ml-0.5"
+                    className="w-2.5 h-7 bg-[#100f0f] transform -skew-x-12 ml-0.5"
                   />
                 ))}
               </div>

@@ -6,18 +6,16 @@ export default function ReuseRefresh() {
     <section className="bg-[#e0ddda] relative overflow-hidden">
       <div className="grid lg:grid-cols-2 min-h-[600px]">
         {/* Image Side with Diagonal Cut */}
-        <div className="relative h-[400px] lg:h-auto">
-          <div className="absolute inset-0 lg:right-[-50px]">
-            <Image
-              src="https://ext.same-assets.com/3334648824/4279719394.png"
-              alt="Modern bedroom interior"
-              fill
-              className="object-cover"
-            />
-          </div>
+        <div className="relative h-[400px] lg:h-auto overflow-hidden">
+          <Image
+            src="https://ext.same-assets.com/3334648824/4279719394.png"
+            alt="Modern bedroom interior"
+            fill
+            className="object-cover"
+          />
           {/* Diagonal overlay for the cut effect */}
           <div
-            className="absolute top-0 right-0 w-[100px] h-full bg-[#e0ddda] hidden lg:block"
+            className="absolute top-0 right-0 w-[120px] h-full bg-[#e0ddda] hidden lg:block"
             style={{
               clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
             }}
@@ -27,13 +25,13 @@ export default function ReuseRefresh() {
         {/* Content Side */}
         <div className="flex items-center py-16 lg:py-0">
           <div className="px-6 lg:px-16 max-w-lg">
-            {/* Decorative lines */}
-            <div className="mb-8">
-              <svg className="w-32 h-8" viewBox="0 0 128 32">
+            {/* Decorative zigzag line */}
+            <div className="mb-8 relative">
+              <svg className="w-40 h-6" viewBox="0 0 160 24">
                 <path
-                  d="M0 16 L40 16 L50 8 L60 24 L70 8 L80 24 L90 16 L128 16"
-                  stroke="#86776a"
-                  strokeWidth="1"
+                  d="M0 12 L20 12 L30 4 L40 20 L50 4 L60 20 L70 4 L80 20 L90 12 L160 12"
+                  stroke="#a89a8c"
+                  strokeWidth="1.5"
                   fill="none"
                 />
               </svg>
